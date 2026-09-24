@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --zahbro-red: #D61D25;
+  --zahbro-red-hover: #B8141B;
+  --zahbro-red-accent: #F12631;
+
+  --zahbro-black: #050505;
+  --zahbro-dark: #111111;
+  --zahbro-dark-grey: #1C1C1E;
+  --zahbro-grey: #70747A;
+  --zahbro-border: #303034;
+
+  --zahbro-off-white: #F5F5F3;
+  --zahbro-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--zahbro-off-white);
+  color: var(--zahbro-black);
+}

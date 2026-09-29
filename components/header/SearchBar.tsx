@@ -1,0 +1,5 @@
+import { SearchIcon } from "./Icons";
+
+export function SearchBar({ compact = false }: { compact?: boolean }) {
+  return <form className={`commerce-search${compact ? " commerce-search--compact" : ""}`} role="search" action="/" method="get"><label className="sr-only" htmlFor={compact ? "sticky-search" : "site-search"}>Search Zahbro Sports products</label><SearchIcon className="search-leading"/><input id={compact ? "sticky-search" : "site-search"} name="q" type="search" placeholder="Search gloves, pads, protection, apparel..."/><label className="sr-only" htmlFor={compact ? "sticky-category" : "search-category"}>Product category</label><select id={compact ? "sticky-category" : "search-category"} name="category" defaultValue="all"><option value="all">All gear</option><option value="boxing">Boxing</option><option value="mma">MMA</option><option value="muay-thai">Muay Thai</option></select><button type="submit" aria-label="Submit product search"><SearchIcon/><span>Search</span></button></form>;
+}

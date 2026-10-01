@@ -228,6 +228,7 @@ svg {
 .nav-dropdown a:hover { padding-left: .75rem; color: var(--zahbro-red); }
 .nav-dropdown .view-all { margin-top: .4rem; border-top: 1px solid #ddd; color: var(--zahbro-red); font-weight: 800; }
 .site-header.is-condensed .promo-bar, .site-header.is-condensed .search-layer { height: 0; opacity: 0; }
+.site-header.is-condensed.search-is-open .search-layer { height: 76px; opacity: 1; }
 .site-header.is-condensed .brand-row { height: 62px; }
 .site-header.is-condensed .logo-mark { width: 40px; height: 40px; font-size: 1.6rem; }
 .site-header.is-condensed .mobile-search-link { display: grid; }
@@ -254,6 +255,7 @@ svg {
   .header-action { min-width: 44px; min-height: 44px; }
   .header-action span:not(.cart-icon), .header-action--optional { display: none; }
   .search-layer, .site-header.is-condensed .search-layer { height: 65px; opacity: 1; }
+  .site-header.is-condensed.search-is-open .search-layer { height: 65px; }
   .commerce-search { height: 43px; }
   .commerce-search select { display: none; }
   .commerce-search button { width: 50px; }
